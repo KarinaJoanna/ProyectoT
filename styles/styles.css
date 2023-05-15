@@ -1,0 +1,1260 @@
+/*
+1. General estilos 
+2. Header
+3. Tipografia
+4. Visuales
+5. Otros
+*/
+
+:root {
+    /*Colores*/
+    --curtx-blue: #028090;
+    --secundary-blue: #05668D;
+    --extra-color: #02C39A;
+    --secundary-extra: #00A896;
+    --parrafo-color: #F0F3BD;
+    --white: #ffffff;
+  }
+  
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+  .container {
+    flex-wrap: wrap;
+    display: flex;
+  }
+  
+  /*Contador -- Reloj contador*/
+  
+  .firstnav{
+    height: 7vh;
+    background-color:#1e291e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+  }
+
+  .secondnav{
+    height: 7vh;
+    background-color:#2f302f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+  }
+
+  .thirdnav{
+    height: 7vh;
+    background-color:#5c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+  }
+  
+  .oferta--imagen--texto{
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  
+  .oferta--imagen--texto img{
+    width: 11em;
+  }
+  
+  .contador--de--ofertas{
+    width: 20%;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--white);
+  }
+  
+  .oferta--imagen--texto p{
+    font-size: 1.3rem;
+    justify-content: end;
+    font-weight: bold;
+    text-align: end;
+  }
+  
+  .oferta--imagen--texto span{
+    font-size: 1.5rem;
+    padding-left: 0.5em;
+  
+  }
+  
+  .icon--cerrar--oferta{
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    line-height: 1.0em;
+    margin-left: auto;
+    float: right;
+  }
+  
+  .ocultar{
+    transition: all 1s;
+    display: none;
+  }
+  
+  /*Header -- Seccion General*/
+  
+  header {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      max-width: 100vw;
+      min-width: 32em;
+      background-color: var(--white);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      text-align: center;
+      max-height: 10vh;
+      z-index: 1;
+  }
+  
+  .header-general {
+    width: 100%;
+    display: flex;
+  }
+  
+  .show_header {
+    opacity: 0.6;
+  }
+  
+  .show--main {
+    opacity: 0.6;
+  }
+  
+  .contador--productos{
+    background-color: var(--curtx-blue);
+    color: var(--white);
+    position: absolute;
+    border-radius: 9999999em;
+    margin-top: 1.1em;
+    margin-left: 2.7em;
+    width: 1.5em;
+    height: 1.5em;
+  }
+  
+  /*Bloque logo -- Seccion header*/
+  
+  .logo_mobile {
+    width: 50%;
+    align-self: center;
+    padding: auto;
+    margin-top: 1.0em;
+  }
+  
+  img header {
+    width: 5.0em;
+    height: 5.0em;
+  }
+  
+  
+  /*Bloque iconos de busqueda -- Seccion header*/
+  
+  .nav_busqueda {
+    width: 25%;
+    align-self: center;
+    font-size: 0.8em;
+  }
+  
+  
+  /*Bloque iconos de desktop -- Seccion header*/
+  
+  .inicio_sesion_desktop, .registro_desktop,  .academia_desktop, .idioma_desktop, .menu_desktop, .nav_busqueda_desktop, .nav_tienda_desktop, .objetos_desktop, .title--container .title--unete--button{
+    display: none;
+  }
+  
+  .carrito--productos{
+    width: 20vw;
+    background-color: var(--white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    height: auto;
+    display: flex;
+    text-align: center;
+    padding: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  
+  .carrito--productos p{
+    font-size: 1.3rem;
+    padding: 1.2em;
+    width: 100%;
+  }
+  
+  .carrito--productos a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #05668D;
+  }
+  
+  /*Menu -- Seccion General*/
+  .icons {
+    color: rgb(0, 0, 0);
+    background: none;
+    border: none;
+    font-size: 2.0em;
+    line-height: 3.0em;
+    padding: 0 0.6em;
+    align-self: center;
+  }
+  
+  .icons i:hover{
+    color: rgb(94, 94, 94);
+    transition: all .3s;
+  }
+  
+  .button_menu_mobile {
+    width: 25%;
+  }
+  
+  /*Menu mobile desplegable -- Seccion General*/
+  
+  .menu_mobile {
+      position: absolute;
+      background-color: var(--white);
+      min-width: 60%;
+      height: 100vh;
+      padding: 1.5em;
+      color: var(--curtx-blue);
+      margin-left: -100%;
+      transition: all .4s;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      max-width: 70%;
+      z-index: 2;
+  }
+  
+  
+  .show {
+    margin-left: 0;
+  }
+  
+  .show_cerrar {
+    margin-left: -100%
+  }
+  
+  
+  .menu_mobile img {
+    width: 5.5em;
+    height: 2.0em;
+  }
+  
+  .icon_cerrar {
+    color: black;
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    line-height: 1.0em;
+    margin-left: auto;
+    float: right;
+  }
+  
+  .lista ul {
+    list-style: none;
+    border-bottom: 0.2rem solid var(--secundary-blue);
+  }
+  
+  .lista ul {
+    list-style: none;
+    border-bottom: 0.1rem solid var(--secundary-blue);
+    padding-bottom: 1.3em;
+    padding-top: 1.3em;
+  }
+  
+  .lista li {
+    list-style: none;
+    font-size: 1.6rem;
+    padding: 0.5em 0 0.5em 0.5em;
+    font-style: normal;
+  }
+  
+  .menu_mobile a {
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--curtx-blue);
+  }
+  
+  /*Bloque de idiomas -- Seccion Header*/
+  
+  .idiomas ul {
+    border-bottom: 1.0rem solid var(--white);
+  }
+  
+  .button-idioma {
+    display: flex;
+    text-decoration: none;
+    background-color: transparent;
+    border: 0.15rem solid black;
+    color: black;
+    font-size: 1em;
+    padding: 0.6em 0.7em;
+  }
+  
+  .button-idioma i {
+    font-size: 1.2em;
+    padding: 0em 0.3em;
+  }
+  
+  /*Pagina home*/
+  /*Seccion de title -- Pagina home*/
+  
+  .title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 32em;
+    height: 40.4em;
+    text-align: center;
+    background: linear-gradient(207.8deg, #00A896 16.69%, #05668D 100%);
+  }
+  
+  .title img {
+    width: 6.5em;
+    height: 2.0em;
+    margin-top: 6em;
+    align-self: center;
+  }
+  
+  .title--container {
+    width: 80%;
+    min-width: 28.8em;
+    max-width: 90em;
+    height: 21.8em;
+    margin-top: 4em;
+    text-align: center;
+    align-self: center;
+  }
+  
+  .title--container h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 3.4rem;
+    color: var(--white);
+  }
+  
+  .title--container p{
+    margin-top: 1.5em;
+    font-size: 1.4rem;
+    font-weight: 550;
+    line-height: 1.8rem;
+    color: #FFE9D5;
+  }
+  
+  .title--container .title--button{
+    position: absolute;
+    left: calc(50% - 10em);
+    top: 23em;
+    display: block;
+    margin-top: 3.5em;
+    padding: 1.5em;
+    width: 19em;
+    height: 4.3em;
+    background-color: var(--white);
+    /*Sombra boton*/
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 0.4em;
+    border: none;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .title--container .title--button i{
+      margin-left: 2em;
+  }
+  
+  
+  /*Seccion de aprendizaje -- Pagina home*/
+  
+  .aprendizaje{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 32em;
+    height: auto;
+    text-align: center;
+    margin-top: 4em;
+    margin-bottom: 4em;
+  }
+  
+  .aprendizaje--container{
+      width: 80%;
+      max-width: 90em;
+      height: auto;
+      margin-top: 2em;
+      text-align: center;
+      align-self: center;
+  }
+  
+  .aprendizaje--container img {
+    width: 100%;
+    /*Su crecimiento es automatico*/
+    height: auto;
+    margin-top: 0 auto;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .aprendizaje--container h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 3.4rem;
+    color: #201E1C;
+  }
+  
+  .aprendizaje--container p{
+    margin-top: 1.1em;
+    margin-bottom: 1.1em;
+    font-size: 1.2rem;
+    font-weight: 520;
+    line-height: 1.8rem;
+    color: #757575;
+  }
+  
+  /*Boton de busqueda -- Seccion aprendizaje -- Pagina home*/
+  .busqueda_aprendizaje_bloque {
+    display: flex;
+    flex-grow: 1;
+    border: 1px solid #000000;
+    margin: 0 1.2rem;
+    height: 4.8rem;
+    background-color: var(--white);
+    margin-top: 0.7em;
+  }
+  
+  .form_busqueda_aprendizaje{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: -0.7em;
+  }
+  
+  .form_busqueda_aprendizaje input{
+    background-color: transparent;
+    border: 0;
+    width: 100%;
+    -webkit-appearance: none;
+    border-radius: 0;
+    height: 3.4rem;
+    outline: none;
+  }
+  
+  /*Bloque de cursos -- Seccion cursos -- Pagina home*/
+  
+  .cursos_home{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      min-width: 32em;
+      height: auto;
+      text-align: left;
+      padding: 1em;
+  
+      background: linear-gradient(180deg, #028090 46.88%, #05668D 97.4%);
+  }
+  
+  .cursos_home h2{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 3.4rem;
+    color: #ffffff;
+  }
+  
+  .cursos_home h3{
+    font-weight: 700;
+    font-size: 1.7em;
+    line-height: 2.0em;
+    color: #ffffff;
+  }
+  
+  .cursos_home hr{
+    height: 0.2em;
+    background-color: var(--white);
+    border-radius: 0.1em;
+  }
+  
+  .container-cursos{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      min-width: 32em;
+      height: auto;
+      padding: 2em;
+      max-width: 124em;
+      align-self: center;
+  }
+  
+  /*Bloque de cursos card -- Seccion cursos -- Pagina home*/
+  
+  .card--curso{
+    width: 100%;
+    background-color: var(--white);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: auto;
+    margin-bottom: 1em;
+  }
+  
+  .card--curso--top img{
+    width: 100%;
+    height: auto;
+  }
+  
+  .card--curso--top:hover img{
+      filter: grayscale(100%);
+      transition: .3s ease-in-out;
+  }
+  
+  .card--curso--body{
+    padding: 1em;
+  }
+  
+  .card--curso--body h2 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    color: #201E1C;
+  }
+  
+  .card--curso--body p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #757575;
+    margin-top: 0.5em;
+  }
+  
+  .card--curso--bottom{
+    padding: 0 1em 1em 1em;
+  }
+  
+  .precio--descuento--curso{
+    display: flex;
+  }
+  
+  .precio--descuento--curso span {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #028090;
+  }
+  
+  .price_old{
+    margin-left: 0.5em;
+  }
+  
+  /*Boton de compra -- Seccion curso -- Pagina home*/
+  
+  .compra_button_cursos{
+    display: flex;
+    flex-grow: 1;
+    border: none;
+    margin: 0 1.2rem;
+    height: 4.8rem;
+    background-color: var(--curtx-blue);
+    margin-top: 0.7em;
+  
+  }
+  
+  .form_compra_cursos{
+    display: flex;
+    align-items: center;
+    padding: 0 2.4rem 0 0;
+    margin-top: -0.4em;
+    margin-left: calc(50% - 8.3em);
+  }
+  
+  .compra_curso_carrito_button{
+    display: flex;
+    border: none;
+    background-color: transparent;
+  
+  }
+  
+  .compra_curso_carrito_button span{
+    font-size: 1.5rem;
+    padding-left: 0.5em;
+    color: var(--white);
+  }
+  
+  
+  /*Cursos posibles imagenes -- Seccion imegenes curso -- Pagina home*/
+  
+  
+  .imagenes--cursos--container--general{
+      width: 100%;
+      align-self: center;
+      max-width: 90em;
+      text-align: center;
+  }
+  
+  .cursos--diferentes h2{
+      font-size: 2.8rem;
+      font-weight: 600;
+      line-height: 3.4rem;
+      color: #201E1C;
+      padding-top: 0.5em;
+  }
+  
+  .container--images--cursos{
+      padding: 4em;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  
+  .imagen--cursos{
+      padding: 0.5em;
+      width: 25%;
+      justify-content: center;
+      align-self: center;
+      
+  }
+  
+  .imagen--cursos img{
+      width: 70%;
+      height: auto;
+  }
+  
+  /*Cursos posibles imagenes -- Seccion imegenes empresa -- Pagina home*/
+  
+  .empresas--contenedor{
+    background-color: #f7f9fa;
+    
+  }
+  
+  .imagenes--empresas--container--general{
+    width: 100%;
+    align-self: center;
+    max-width: 90em;
+    text-align: center;
+  }
+  
+  .empresas--contenedor h2{
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 3.4rem;
+    color: #201E1C;
+    padding: 0.5em;
+  }
+  
+  .empresas--contenedor p{
+    font-size: 1.3rem;
+    padding: 0.5em;
+  }
+  
+  
+  .container--images--empresas{
+    padding: 4em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .imagen--empresas{
+    font-size: 2rem;
+    color: #a7aaad;
+    width: 10%;
+  }
+  
+  
+  /*Cursos categorias principales -- Seccion Categorias -- Pagina home*/
+  
+  .categorias--principales{
+      position: relative;
+      width: 100%;
+      min-width: 32em;
+      height: auto;
+      padding: 2em;
+  }
+  
+  .categorias--principales--general{
+      width: 100%;
+      align-self: center;
+      max-width: 110em;
+  }
+  
+  .categorias--principales h2{
+      font-weight: 700;
+      font-size: 2.4rem;
+      line-height: 2.6em;
+      color:#201E1C;
+  }
+  
+  .container--categorias{
+      display: flex;
+      width: 100%;
+      padding: 1em;
+      flex-wrap: wrap;
+  }
+  
+  .container--categorias a{
+      border-radius: 3em;
+      background-color: #ffffff;
+      border: 0.1em solid black ;
+      color: black;
+      font-size: 1.6rem;
+      text-decoration: none;
+      text-align: center;
+      align-self: center;
+      padding: 1em;
+      margin: 0.3em;
+      height: auto;
+  }
+  
+  /*Botones de cada categoria -- Seccion Categorias -- Pagina home*/
+  
+  .container--categorias a{
+      border-radius: 3em;
+      background-color: #ffffff;
+      border: 0.1em solid black ;
+      color: black;
+      font-size: 1.6em;
+      text-decoration: none;
+      text-align: center;
+      align-self: center;
+      padding: 1em;
+      margin: 0.3em;
+  }
+  
+  .container--categorias a:hover{
+    transition: all 0.5s;
+    background-color:#000000;
+    color: var(--white);
+  }
+  
+  /*Columnas grid de a -- Seccion Categoria --Pagina home*/
+  
+  .container--categorias .column-5{
+      width: 45%;
+  }
+  
+  .container--categorias .column-3{
+      width: 25%;
+  }
+  
+  .container--categorias .column-7{
+      width: 65%;
+  }
+  
+  .container--categorias .column-10{
+      width: 95%;
+  }
+  
+  /*Pagina Contacto*/
+  /*Seccion Contacto -- Pagina Contacto*/
+  
+  .contactame--nosotros{
+      
+      position: relative;
+      width: 100%;
+      min-width: 32em;
+      height: 80vh;
+      padding: 2em;
+  }
+  
+  .contactame--nosotros h2{
+      font-size: 2.8rem;
+      font-weight: 100;
+      line-height: 3.4rem;
+      color: #201E1C;
+      margin-bottom: em;
+  }
+  
+  .contactame--nosotros{
+      font-weight: 500;
+      font-size: 1.2rem;
+      line-height: 1.6rem;
+  }
+  
+  .container--contacto{
+      display: flex;
+      width: 95%;
+      text-align: left;
+  }
+  
+  /*Contacto form -- Seccion Contacto -- Pagina Contacto*/
+  .container--contacto form{
+      width: 100%;
+      padding: 1em;
+  }
+  
+  .container--column--input{
+      width: 100%;
+      height: auto;
+      display: block;
+      padding: 1em 0;
+  }
+  
+  .container--column--input input{
+      width: 100%;
+      display: block;
+      height: 3em;
+  }
+  
+  .container--column--input textarea{
+      display: block;
+      max-width: 100%;
+      max-height: 5em;
+      width: 100%;
+      height: 5em;
+  }
+  
+  .container--column--input span{
+      font-size: 1.2rem;
+      line-height: 2.4em;
+      color: rgba(0, 0, 0, 0.8);;
+  }
+  
+  .container--checkbox{
+      width: 100%;
+      padding: 1em;
+  }
+  
+  .container--checkbox span{
+      font-size: 1.2em;
+      margin-left: 0.5em;
+  }
+  
+  .container--checkbox span a{
+      color: var(--curtx-blue);
+      text-decoration: none;
+  }
+  
+  .button--contacto{
+      background-color: transparent;
+      border-radius: 1em;
+      padding: 0.6em 2em;
+      color: var(--curtx-blue);
+      font-size: 1.5rem;
+      border: 0.1em solid var(--curtx-blue);
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  
+  .container--column--input--right{
+      text-align: right;
+      margin: 1em;
+  }
+  
+  
+  
+  /*Pagina cursos*/
+  /*Seccion de curso -- Pagina cursos*/
+  
+  .cursos--container{
+      position: relative;
+      width: 100%;
+      min-width: 32em;
+      height: auto;
+      padding: 2em;
+      background-color: #F2F2F2;
+  }
+  
+  .cursos--selectbox--container{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 2em;
+      max-width: 124em;
+      align-self: center;
+  }
+  
+  .cursos--selectbox--container h2{
+      font-size: 2.4rem;
+      font-weight: bold;
+      line-height: 3.4rem;
+      color: #000000;
+  }
+  
+  .cursos--selectbox--container h3{
+      font-weight: 700;
+      font-size: 1.7em;
+      line-height: 2.0em;
+      color: #000000;
+  }
+  
+  /*Select de cursos -- Seccion de curso -- Pagina cursos*/
+  
+  .nav--selectbox{
+      height: auto;
+      padding-bottom: 1em;
+      width: 100%;
+  }
+  
+  .nav--selectbox select{
+      width: 100%;
+      padding: 0.5em 0.5em;
+  }
+  
+  /*Cursos more -- Seccion de curso -- Pagina cursos*/
+  
+  .container--cursos--more{
+      display: flex;
+      height: 15em;
+      width: 100%;
+  }
+  
+  .boton--cursos--more{
+      width:90%;
+      height: auto;
+      align-self: center;
+      margin-left: calc(50% - 14.5em);
+  }
+  
+  .boton--cursos--more a{
+      background-color: var(--secundary-blue);
+      padding: 0.5em 0.5em;
+      color: var(--white);
+      text-decoration: none;
+      font-size: 1.8rem;
+      font-weight: 600;
+  }
+  
+  .boton--cursos--more i{
+      margin-left: 2em;
+  }
+  
+  
+  /*Pagina error*/
+  /*Seccion Error -- Pagina error*/
+  
+  .title-word--error {
+    animation: color-animation 4s linear infinite;
+  }
+  
+  .title-word-1 {
+    --color-1: #028090;
+    --color-2: #1E1E1E;
+    --color-3: #00A896;
+  }
+  
+  .title-word-2 {
+    --color-1: #DBAD4A;
+    --color-2: #ACCFCB;
+    --color-3: #17494D;
+  }
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  
+  .container--error {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    height: 80vh
+  }
+  
+  .title--error span{
+    font-weight: 800;
+    font-size: 10rem;
+    text-transform: uppercase;
+  }
+  
+  .container--error h2{
+    font-weight: 800;
+    font-size: 4rem;
+    text-transform: uppercase;
+  }
+  
+  h4 a{
+    color: var(--curtx-blue);
+    font-size: 1.2rem;
+  }
+  
+  /*Pagina Login*/
+  /*Seccion Login -- Pagina Login*/
+  
+  .contenedor_contenido{
+  
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 100vw;
+    min-width: 32em;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+  }
+  
+  .contenedor_formulario{
+    width: 55%
+  }
+  
+  .contenedor_contenido h1{
+    color: black;
+    font-weight: 500;
+    font-size: 3.6em;
+    display: inline-block;
+  }
+  
+  .contenedor_contenido h2{
+    color: black;
+    font-weight: 500;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #05668D;
+    display: inline-block;
+  }
+  
+  .input{
+    margin-bottom: 50px;
+  }
+  
+  .input span{
+    font-size: 1em;
+    display: inline;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .input input{
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  
+  .alinearizq {
+    float: left;
+  }
+  .alinearder {
+    float: right;
+  }
+  
+  .input button, .input1 button{
+    background-color: transparent;
+    border-radius: 1em;
+    padding: 0.6em 2em;
+    color: var(--curtx-blue);
+    font-size: 1.5rem;
+    border: 0.1em solid var(--curtx-blue);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 100%;
+  }
+  
+  .input button:hover, .input1 button:hover{
+    background-color: var(--curtx-blue);
+    color: var(--white);
+    transition: all 1s;
+  }
+  
+  /*Pagina Resgitro*/
+  /*Seccion Register -- Pagina Registro*/
+  
+  .contenedor_contenido1{
+  
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 100vw;
+    min-width: 32em;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .contenedor_formulario1{
+    width: 55%
+  }
+  
+  .contenedor_contenido1 h1{
+    color: black;
+    font-weight: 500;
+    font-size: 3.6em;
+    display: inline-block;
+  }
+  
+  .contenedor_contenido1 h2{
+    color: black;
+    font-weight: 500;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #05668D;
+    display: inline-block;
+  }
+  
+  .input1{
+    margin-bottom: 50px;
+  }
+  
+  .input1 span{
+    font-size: 1em;
+    display: inline;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  
+  .input1 input{
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  
+  /* Contador fecha*/
+  
+  #fecha {
+    line-height: 5em;
+    margin: 0 auto;      
+    text-align: center;
+    font-size: 1em;
+    color: #028090;
+  }
+  
+  #desc{
+    font-family: 'DM Sans', sans-serif;
+    font: 15px;
+    color: rgb(87, 85, 85);
+    font-weight: bold;
+  }
+  
+  
+  /*Pagina carrito*/
+  /*Seccion carrito -- Pagina carrito*/
+  
+  .carrtitle{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    color:  #05668D;
+    font-weight: bold;
+    padding: 1em;
+  }
+  
+  .contenedor--carrito{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+    align-items: center;
+  }
+  
+  /*Footer -- Pagina general*/
+  
+  footer{
+    background: linear-gradient(262.8deg, #05668D 2.74%, #028090 61.24%);
+    width: 100%;
+    height: auto;
+    padding: 2em;
+    margin-top: auto;
+  }
+  
+  .footer--button--general--idioma{
+    width: 100%;
+  }
+  
+  /*Redes sociales -- Seccion footer -- Pagina general*/
+  .redes--sociales--footer{
+    display: flex;
+    width: 100%;
+    margin: 1em 0;
+    justify-content: center;
+  }
+  
+  .red--social--footer{
+    padding: 0.5em;
+  }
+  
+  .red--social--footer a{
+    color: var(--white);
+    font-size: 4rem;
+  }
+  
+  /*Idioma button -- Seccion footer -- Pagina general*/
+  
+  .button-idioma--footer{
+    display: flex;
+    text-decoration: none;
+    background-color: transparent;
+    border: 0.15rem solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    font-size: 1.4em;
+    padding: 1em 1.2em;
+  }
+  
+  .button-idioma--footer i{
+    padding: 0em 0.7em 0 0;
+    font-size: 1.4em;
+  }
+  
+  .footer--general--mobile{
+    text-align: center;
+    justify-content: center;
+    height: auto;
+  }
+  
+  
+  /*Privacidad y copyrght -- Seccion footer -- Pagina general*/
+  
+  .footer--temas-privacidad a{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  
+  .footer--general--mobile p{
+    color: white;
+    padding: 1em;
+  }
+  
+  .footer--general--desktop{
+    display: none;
+  }
+  
+
+  /*Nav gobierno del estado*/
+
+  ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  ul.navbar li {
+    float: left;
+  }
+
+  ul.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    text-decoration: none;
+  }
+
+  ul.navbar li a:hover {
+    background-color: #ffffff30;
+  }
