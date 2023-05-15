@@ -27,7 +27,7 @@
 </head>
 
 <body>
-    <!--Bloque de contador-->
+    <!--Bloque de gob-->
     <div class="firstnav" id="ofertas--contenedor">
         <div class="oferta--imagen--texto">
             <img src="imgs/goblogo.png" alt="Logo gobierno">
@@ -38,21 +38,20 @@
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </div>
-        <div id="fechahrs" class="contador--de--ofertas"></div>
     </div>
 
+    <!--Bloque de institucion-->
     <div class="secondnav" id="ofertas--contenedor">
         <div class="oferta--imagen--texto">
             <p>Instituto Politécnico Nacional</p>
         </div>
-        <div id="fechahrs" class="contador--de--ofertas"></div>
     </div>
 
+    <!--Bloque de titulo-->
     <div class="thirdnav" id="ofertas--contenedor">
         <div class="oferta--imagen--texto">
             <p>VIOLENTOMETRO</p>
         </div>
-        <div id="fechahrs" class="contador--de--ofertas"></div>
     </div>
 
 
@@ -61,96 +60,26 @@
 
         <!--Seccion de titulo principal-->
         <section class="title">
-            <img src="./assets/icons/Curtx-blanco.png" alt="Logo de pagina">
             <div class="title--container">
                 <h1> Sí, la violencia también se mide
                 </h1>
-                <a href="./registro.html" class="title--unete--button">Unete de forma gratuita</a>
-                <a href="./error.html" class="title--button">Mas populares <i class="fa-solid fa-chevron-down"></i></a>
             </div>
         </section>
 
         <!--Seccion de aprendizaje-->
         <section class="aprendizaje">
             <div class="aprendizaje--container">
-                <h2>Un aprendizaje interesante</h2>
-                <p>Habilidades para tu presente(y tu futuro). Unete a nosotros y da tus primeros pasos
+                <h2>¿Qué es el violetometro?</h2>
+                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, porro maxime. Saepe quis doloribus beatae possimus eveniet cum aperiam maxime odit inventore. Nisi quod cum facere, excepturi illo ipsam nesciunt.
                 </p>
-                <img src="./assets/imgs/imagen-slide1.png" alt="">
-
-                <div class="busqueda_aprendizaje_bloque">
-                    <form class="form_busqueda_aprendizaje">
-                        <button class="icons">
-                            <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-                        </button>
-                        <input type="text" placeholder="¿Quieres preguntar algo?">
-                    </form>
-
-                </div>
-            </div>
-        </section>
-
-        <!--Seccion cursos en pagina de inicio-->
-        <section class="cursos_home">
-            <div class="container--general--cursos">
-                <h2>Cursos online </h2>
-                <hr>
-                <h3>Accede a los mejores cursos online para creativos. Interactúa con los mejores profesionales y
-                    descubre todos los secretos del sector.
-                </h3>
-                <div class="container-cursos wrap">
-
-                    <!--Contendeor de cada carta curso-->
-                    <!--Podemos ver como se ocupan web components para la generacion de cartas con diversas atributos eso hace que nuestros recursos sean menores-->
-                    <card-curso title="Aprende Programación en Python" parrafo="Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
-                    las bases hasta lo avanzado en C++" discontprice="66% Dto." oldprice="$999 MXN" priceactual="$299 MXN"
-                        img="./assets/imgs/imagen-python.jpeg" imagencarrito="./assets/icons/carrito-blanco.svg">
-                    </card-curso>  
-                       
-                    <card-curso title="Aprende Programación en Java" parrafo="Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
-                    las bases hasta lo avanzado en C++" discontprice="66% Dto." oldprice="$999 MXN" priceactual="$299 MXN"
-                        img="./assets/imgs/imagen-java.jpeg" imagencarrito="./assets/icons/carrito-blanco.svg">
-                    </card-curso>
-
-                    <card-curso title="Aprende a utilizar Adobe Photoshop" parrafo="Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
-                    las bases hasta lo avanzado en C++" discontprice="66% Dto." oldprice="$999 MXN" priceactual="$299 MXN"
-                        img="./assets/imgs/imagen-photoshop.jpeg" imagencarrito="./assets/icons/carrito-blanco.svg">
-                    </card-curso>
-
-                    <card-curso title="Adobe Illustrator para principiantes" parrafo="Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
-                    las bases hasta lo avanzado en C++" discontprice="66% Dto." oldprice="$999 MXN" priceactual="$299 MXN"
-                        img="./assets/imgs/imagen-illustrator.jpeg" imagencarrito="./assets/icons/carrito-blanco.svg">
-                    </card-curso> 
-
-                    <card-curso title="Curso de PowerBi - Análisis de datos y Bussiness Intelligences" parrafo="Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
-                    las bases hasta lo avanzado en C++" discontprice="66% Dto." oldprice="$999 MXN" priceactual="$299 MXN"
-                        img="./assets/imgs/imagen-powerbi.png" imagencarrito="./assets/icons/carrito-blanco.svg">
-                    </card-curso>  
-                       
-                    <card-curso title="Diseño web con Figma: Introducción" parrafo="Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
-                    las bases hasta lo avanzado en C++" discontprice="66% Dto." oldprice="$999 MXN" priceactual="$299 MXN"
-                        img="./assets/imgs/imagen-figma.jpeg" imagencarrito="./assets/icons/carrito-blanco.svg">
-                    </card-curso>
-
-                    <card-curso title="Ilustración digital de proyectos arquitectonicos" parrafo="Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
-                    las bases hasta lo avanzado en C++" discontprice="66% Dto." oldprice="$999 MXN" priceactual="$299 MXN"
-                        img="./assets/imgs/imagen-autocat.jpeg" imagencarrito="./assets/icons/carrito-blanco.svg">
-                    </card-curso>
-
-                    <card-curso title="Curso de certificación en AutoDesk online" parrafo="Si eres un apasionado de la programación, este curso te interesa. aprenderás desde
-                    las bases hasta lo avanzado en C++" discontprice="66% Dto." oldprice="$999 MXN" priceactual="$299 MXN"
-                        img="./assets/imgs/imagen-autodesk.jpeg" imagencarrito="./assets/icons/carrito-blanco.svg">
-                    </card-curso>  
-
-                </div>
             </div>
         </section>
 
         <!--Empresas avaladas-->
         <section class="empresas--contenedor">
             <div class="imagenes--empresas--container--general">
-                <h2>Contamos con la confianza de más de 12.500 equipos excelentes</h2>
-                <p>Las principales empresas utilizan los mismos cursos para ayudar a los empleados a mantener al día sus habilidades.</p>
+                <h2>Instituciones que te pueden ayudar</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia fuga doloribus iure id totam quidem quasi et ex maiores expedita corrupti eligendi debitis dignissimos, veniam omnis ipsam deleniti ipsa dolor!</p>
                 <div class="container--images--empresas">
                     <div class="imagen--empresas">
                         <i class="fa-brands fa-dhl"></i>
@@ -180,55 +109,12 @@
             </div>
         </section>
 
-        <!--Seccion de imagenes de categorias de curso-->
-        <section class="cursos--diferentes">
-            <div class="imagenes--cursos--container--general">
-                <h2>Contamos con diferentes cursos </h2>
-                <div class="container--images--cursos">
-                    <div class="imagen--cursos">
-                        <img src="./assets/imgs/adobe-illustrator.png" alt="Curso adobe-illustrator">
-                    </div>
-                    <div class="imagen--cursos">
-                        <img src="./assets/imgs/Adobe_Photoshop.png" alt="Curso Adobe_Photoshop">
-                    </div>
-                    <div class="imagen--cursos">
-                        <img src="./assets/imgs/Microsoft_Excel.png" alt="Curso excel">
-                    </div>
-                    <div class="imagen--cursos">
-                        <img src="./assets/imgs/python.png" alt="Curso phyton">
-                    </div>
-                    <div class="imagen--cursos">
-                        <img src="./assets/imgs/Ableton.png" alt="Curso Ableton">
-                    </div>
-                    <div class="imagen--cursos">
-                        <img src="./assets/imgs/revit.png" alt="Curso revit">
-                    </div>
-                    <div class="imagen--cursos">
-                        <img src="./assets/imgs/protools.png" alt="Curso protools">
-                    </div>
-                    <div class="imagen--cursos">
-                        <img src="./assets/imgs/HTML.png" alt="Curso HTML">
-                    </div>
-                </div>
-            </div>
+        <!-- Información violentometro-->
+
+        <section>
+            <hr>
         </section>
 
-        <!--Seccion de categorias principales-->
-        <section class="categorias--principales">
-            <div class="categorias--principales--general">
-                <h2>Categorias principales</h2>
-                <div class="container--categorias">
-                    <a href="./error.html" class="boton--categoria column-5">Ciencia de datos</a>
-                    <a href="./error.html" class="boton--categoria column-5">Negocios</a>
-                    <a href="./error.html" class="boton--categoria column-3">Salud</a>
-                    <a href="./error.html" class="boton--categoria column-7">Desarollo personal</a>
-                    <a href="./error.html" class="boton--categoria column-10">Ciencas sociales</a>
-                    <a href="./error.html" class="boton--categoria column-10">Tecnologias de la informacion</a>
-                    <a href="./error.html" class="boton--categoria column-3">Musica</a>
-                    <a href="./error.html" class="boton--categoria column-7">Informatica y software</a>
-                </div>
-            </div>
-        </section>
     </main>
 
     <!--Pie de pagina general-->
@@ -236,12 +122,6 @@
 
         <!--Pie de pagina mobile-->
         <div class="footer--general--mobile">
-            <div class="footer--button--general--idioma">
-                <button class="button-idioma--footer">
-                    <i class="fa-solid fa-language"></i>
-                    Español
-                </button>
-            </div>
             <div class="redes--sociales--footer">
                 <div class="red--social--footer">
                     <a href="./error.html"><i class="fa-brands fa-facebook"></i></a>
@@ -291,19 +171,13 @@
                     <li><a href="./error.html">Instagram</a></li>
                 </ul>
             </div>
-            <div class="footer--button--general--idioma--desktop">
-                <button class="button-idioma--footer">
-                    <i class="fa-solid fa-language"></i>
-                    Español
-                </button>
-            </div>
 
             <div class="container--logo--footer">
                 <a href="./index.html"><img src="./assets/icons/Curtx-blanco.png" alt="Logo de pagina"></a>
             </div>
 
             <div class="container--copyright--footer">
-                <p>@Copyright Curtx 2022</p>
+                <p>@Copyright 2023</p>
             </div>
 
         </div>
