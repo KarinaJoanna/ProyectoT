@@ -290,7 +290,6 @@
   justify-content: center;
 }
 
-/* Estilos CSS para cada opción */
 .option--conocienodusuario {
   display: flex;
   flex-direction: column;
@@ -299,21 +298,17 @@
   flex-basis: 200px;
 }
 
-/* Estilos CSS para la imagen de cada opción */
 .option--conocienodusuario img {
-  width: 100%;
-  height: 25em;
+  height: 30em;
   margin-top: 30px;
   margin-bottom: 30px;
   padding: 5em;
 }
 
-/* Estilos CSS para el texto de cada opción */
 .option--conocienodusuario p {
-  margin-top: 1.1em;
   margin-bottom: 1.1em;
-  font-size: 1.2rem;
-  font-weight: 520;
+  font-size: 1.6rem;
+  font-weight: 550;
   line-height: 1.8rem;
   color: var(--black); 
 }
@@ -321,10 +316,20 @@
 /*Pagina conociendote mas*/
   /*Seccion de title -- Pagina conociendote mas*/
   
-  .title--container--conociendomas h2{
+  .title--container--conociendomas h1{
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 3.4rem;
+    color: var(--black);
+    margin-top: 1.1em;
+    margin-bottom: 1.1em;
+    text-align: center;
+  }
+
+  .title--container--conociendomas p{
+    font-size: 1.8rem;
+    font-weight: 520;
+    line-height: 1.8rem;
     color: var(--black);
     margin-top: 1.1em;
     margin-bottom: 1.1em;
