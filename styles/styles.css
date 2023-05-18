@@ -354,3 +354,77 @@
     background-color: #5c1c1c;
   }
   
+
+  /*Seccion de pop up -- Pagina main*/
+
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.89);
+    padding: 20px;
+    border: 1px solid black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+  }
+  
+  .popup img {
+    height: auto;
+  }
+
+  .popup h1{
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 3.4rem;
+    color: var(--black);
+    margin-top: 1.1em;
+    margin-bottom: 1.1em;
+    text-align: center;
+    font-style: oblique;
+  }
+
+  .popup h4{
+    font-size: 1.5rem;
+    font-weight: 550;
+    line-height: 1.8rem;
+    color: var(--black);
+    margin-top: 1.1em;
+    margin-bottom: 1.1em;
+    text-align: center;
+  }
+
+  .popup p{
+    font-size: 1.5rem;
+    font-weight: 520;
+    line-height: 1.8rem;
+    color: var(--black);
+  }
+  
+  .left-image {
+    float: left;
+    max-width: 8%;
+    margin-right: 10px;
+  }
+  
+  .right-image {
+    float: right;
+    max-width: 10%;
+    margin-left: 10px;
+  }
+
+  .center-image{
+    max-width: 50%;
+  }
+  
+  .close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+
+    
