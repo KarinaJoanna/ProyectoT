@@ -65,7 +65,7 @@
          <section class="aprendizaje">
             <div class="aprendizaje--container">
                 <!-- Botón para abrir el pop-up -->
-                <a onclick="openPopup()">
+                <a id="link-violentometro" onclick="openPopup()">
                     <h2> ¿Qué es el violetometro?</h2>
                 </a>
                 <!-- Contenido del pop-up -->
@@ -84,16 +84,47 @@
                     <script>
                         function openPopup() {
                         document.getElementById('popup').style.display = 'block';
+                        document.getElementById('link-violentometro').style.display = 'none';
                         }
                     
                         function closePopup() {
                         document.getElementById('popup').style.display = 'none';
+                        document.getElementById('contenido-adicional').style.display = 'block';
                         }
                     </script>
 
                 </div>
             </div>
+
+            <div id="contenido-adicional" style="display: none;" class="aprendizaje--container">
+                <h3>Ahora que sabes que es el violentometro vamos a ver como se divide </h3>
+                <p> El Violentómetro IPN se divide en cinco escalas de colores, que representan diferentes niveles de violencia: </p>
+                <div class="aprendizaje--container--items">
+                    <div class="aprendizaje--container--item">
+                        <img src="imgs/verde.png" alt="Ilustración">
+                        <p>Violencia Sin Daño: Representada por el color verde, indica una relación libre de violencia</p>
+                    </div>
+                    <div class="aprendizaje--container--item">
+                        <img src="imgs/amarillo.png" alt="Ilustración">
+                        <p>Violencia Verbal: Representada por el color amarillo, abarca expresiones ofensivas, humillaciones y menosprecios verbales.</p>
+                    </div>
+                    <div class="aprendizaje--container--item">
+                        <img src="imgs/naranja.png" alt="Ilustración">
+                        <p>Violencia Psicológica: Representada por el color naranja, incluye manipulación emocional, control excesivo y amenazas.</p>
+                    </div>
+                    <div class="aprendizaje--container--item">
+                        <img src="imgs/rojo.png" alt="Ilustración">
+                        <p>Violencia Física: Representada por el color rojo, engloba agresiones físicas como golpes, empujones y maltrato físico.</p>
+                    </div>
+                    <div class="aprendizaje--container--item">
+                        <img src="imgs/morado.png" alt="Ilustración">
+                        <p>Violencia Extrema: Representada por el color morado, implica violencia sexual, violencia económica y amenazas de muerte.</p>
+                    </div>
+            </div>
+
         </section>
+
+       
 
         <!--Descargas-->
 
