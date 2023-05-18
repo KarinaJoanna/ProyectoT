@@ -183,6 +183,12 @@
     line-height: 1.8rem;
     color: #757575;
   }
+
+  a:hover h2 {
+    text-decoration: underline;
+    color: #800000;
+  }
+ 
   
   /*Instituciones -- Pagina home*/
   
