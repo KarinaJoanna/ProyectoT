@@ -181,17 +181,27 @@
     font-size: 1.5rem;
     font-weight: 520;
     line-height: 1.8rem;
-    color: #5a5858;
+    color: #403f3f;
   }
 
-  .aprendizaje--container--item{
+  .aprendizaje--container--items {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    height: auto;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    flex-direction: column;
+  }
+  
+  .aprendizaje--container--item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2cm;
+  }
+  
+  .aprendizaje--container--item img {
+    max-width: 100px;
+    margin-right: 2cm;
+  }
+  
+  .aprendizaje--container--item p {
+    width: 70%;
   }
 
   a:hover h2 {
