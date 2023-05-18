@@ -123,7 +123,22 @@
     line-height: 1.8rem;
     color: #FFE9D5;
   }
-    
+    /*Seccion Banner -- Pagina home*/
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 32em;
+    height: 30.4em;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../imgs/banner.png");
+    height: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
   /*Seccion de aprendizaje -- Pagina home*/
   
   .aprendizaje{
