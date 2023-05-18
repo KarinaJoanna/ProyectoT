@@ -64,9 +64,12 @@
 
          <section class="aprendizaje">
             <div class="aprendizaje--container">
+
+
                 <!-- Botón para abrir el pop-up -->
                 <a id="link-violentometro" onclick="openPopup()">
-                    <h2> ¿Qué es el violetometro?</h2>
+                    <p>Para poder comenzar a comprender, nos tenemos que plantear la siguiente pregunta:</p>
+                    <h2> ¿Qué es el violentometro?</h2>
                 </a>
                 <!-- Contenido del pop-up -->
                 <div id="popup" class="popup" style="display: none;">
@@ -85,11 +88,13 @@
                         function openPopup() {
                         document.getElementById('popup').style.display = 'block';
                         document.getElementById('link-violentometro').style.display = 'none';
+                        document.getElementById('boton-main').style.display = 'none';
                         }
                     
                         function closePopup() {
                         document.getElementById('popup').style.display = 'none';
                         document.getElementById('contenido-adicional').style.display = 'block';
+                        document.getElementById('boton-main').style.display = 'block';
                         }
                     </script>
 
@@ -122,31 +127,31 @@
                     </div>
             </div>
 
-        </section>
+            <p>Ahora que ya sabes que es el violentometro y el como se divide, ¡animate a hacer la siguiente encuesta! </p>
 
-       
 
-        <!--Descargas-->
-
-        <section class="descargas--contenedor">
-            <div class="imagenes--empresas--container--general">
-                <h2>Descargas</h2>
-                <p>Si te interesa conocer mas acerca del violentometro a continuacion puedes encontrar los links de descarga</p>
-                <div class="botones--descargas">
-                    <button class="button--descargas">Violentometro</button>
-                    <button class="button--descargas">¿Has visto el violentometro ultimamente?</button>
-                </div>
+            <!-- Boton para ir a las encuestas -->
+            <div id="boton-main"class="button--container " style="display: none;">
+                <a href="conociendotemas.html" class="button">Ir a la encuesta</a>
             </div>
+
         </section>
 
        
-        <!-- Boton para ir a las encuestas -->
-
-        <div class="button--container">
-            <a href="conociendotemas.html" class="button">Ir a la encuesta</a>
-        </div>
           
+             <!--Descargas-->
 
+             <section class="descargas--contenedor">
+                <div class="imagenes--empresas--container--general">
+                    <h2>Descargas</h2>
+                    <p>Si te interesa conocer mas acerca del violentometro a continuacion puedes encontrar los links de descarga</p>
+                    <div class="botones--descargas">
+                        <button class="button--descargas">Violentometro</button>
+                        <button class="button--descargas">¿Has visto el violentometro ultimamente?</button>
+                    </div>
+                </div>
+            </section>
+            
     </main>
 
     <!--Pie de pagina general-->
